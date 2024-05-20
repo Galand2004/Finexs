@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Finexx Voyage</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo">
+            <a href="#"><img src="./assets/logoo.jpeg" alt="logo"  height="60px"></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Acceuil</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#offer">Offres</a></li>
+          <li><a href="#client">Clients</a></li>
+          <li><button class="btn">S'inscrire</button></li>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <h1>Tout reve a une destination,laissez nous vous conduire vers la votre</h1>
+        <p>
+          Avec confort et securite nous vous transportons vers vos reves
+        </p>
+        <div class="booking">
+          <div class="booking__type" id="booking-type">
+            <div class="active">Aller-simple</div>
+            <div>Aller-Retour</div>
+            <div>Multi-Villes</div>
+          </div>
+          <form action="/" class="booking__form">
+            <div class="booking__input">
+              <label for="arrival">A</label>
+              <input type="text" placeholder="Destination" />
+            </div>
+            <div class="booking__input">
+              <label for="departure">De</label>
+              <input type="text" placeholder="Douala" />
+            </div>
+            <div class="booking__input">
+              <label for="date">Date</label>
+              <input type="text" placeholder="Date" />
+            </div>
+          </form>
+          <div class="booking__btn">
+            <button class="btn">Reserver</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container service__container" id="service">
+      <h2 class="section__header">Nos Services et Tarifs</h2>
+      <p class="section__description">
+       Nous vous offrons une palette de services sur mesures pour vous permettre d'atteindre votre prochaine
+       destination a des prix de reves
+      </p>
+      <div class="service__grid">
+        <div class="service__card">
+          <img src="assets/vip.jpeg" alt="service" />
+          <div>
+            <div>
+              <h4>VIP Class</h4>
+              <p>
+                Tout le confort pour un voyage inoubliable
+                <ul>
+                  <li>Petit Dejeuner</li>
+                  <li>Wi-Fi gratuit</li>
+                  <li>Toilettes</li>
+                  <li>TV personnelle</li>
+                  <li>Boissons chaudes et fraiches</li>
+                  <li>Bus climatise</li>
+                  <li>Bornes de recharge</li>
+                </ul>
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">Voir plus</button>
+            </div>
+          </div>
+        </div>
+        <div class="service__card">
+          <img src="assets/prestige.jpeg" alt="service" />
+          <div>
+            <div>
+              <h4>Prestige</h4>
+              <p>
+                le maximum pour vous faire plaisir durant votre voyage
+                <ul>
+                  <li>Toilettes</li>
+                  <li>TV Centrale</li>
+                  <li>Boissons chaudes ou fraiches</li>
+                  <li>Bus climatise</li>
+                </ul>
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">Voir plus</button>
+            </div>
+          </div>
+        </div>
+        <div class="service__card">
+          <img src="assets/classic.jpeg" alt="service" />
+          <div>
+            <div>
+              <h4>Classic</h4>
+              <p>
+                Le minimum pour vous conduire a destination
+                <ul>
+                  <li>Toilettes</li>
+                  <li>TV Centrale</li>
+                  <li>Bus climatise</li>
+                </ul>
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">Voir plus</button>
+            </div>
+          </div>
+        </div>
+        <div class="service__card">
+          <img src="assets/express.jpeg" alt="service" />
+          <div>
+            <div>
+              <h4>Courier EXPRESS</h4>
+              <p>
+                Pour vous et pour l'atteinte de vos objectifs,
+                nous transportons et livraisons vos bagages et/ou marchandises
+                sans risque de perte 
+              </p>
+            </div>
+            <div class="service__btn">
+              <button class="btn">Voir plus</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container offer__container" id="offer">
+      <div class="offer__header">
+        <h2 class="section__header">Offres de voyages, departs, destinations</h2>
+        <a href="#">Tout voir</a>
+      </div>
+      <div class="offer__grid">
+        <div class="offer__card">
+          <img src="assets/monumetyde.jpg" alt="offer" />
+          <h4>De Douala a Yaounde</h4>
+          <p>Tous les jours</p>
+          <div>
+            <span>XAF 4000</span>
+            <button class="btn">Reserver</button>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="assets/kribibeach.jpg" alt="offer" />
+          <h4>De Douala a Kribi</h4>
+          <p>Tous les jours</p>
+          <div>
+            <span>XAF 8000</span>
+            <button class="btn">Reserver</button>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img src="assets/DLA-ROND-POINT.jpg" alt="offer" />
+          <h4>De Yaounde a Douala</h4>
+          <p>Tous les jours</p>
+          <div>
+            <span>XAF4000</span>
+            <button class="btn">Reserver</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/logof.png" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">RESERVER FACILEMENT VOTRE PROCHAIN VOYAGE</h2>
+        <p class="section__description">
+          TELECHARGER NOTRE APPLICATION,
+           connecter vous et decouvrer tous services
+        </p>
+        <ul>
+          <li>
+            <span><i class="ri-checkbox-circle-line"></i></span>
+            Trouver facilement vos destinations et nos tarifs ainsi que les differents avantages y afferant
+          </li>
+          <li>
+            <span><i class="ri-checkbox-circle-line"></i></span>
+            Laisser vos avis, faites des reclamations et donner nous des suggestions 
+            pour ameliorer votre experience ches nous
+          </li>
+        </ul>
+        <div class="about__links">
+          <a href="#">
+            <img src="assets/google-play.png" alt="google-play" />
+          </a>
+          <a href="#">
+            <img src="assets/app-store.png" alt="app-store" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="client" id="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">Ce Que Disent Nos Fideles Clients</h2>
+        <p class="section__description">
+          Decouvre les magnifiques experiences qui t'attendent a travers la voix de nos clients fideles
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client.jpg" alt="client" />
+                <h4>Darline</h4>
+                <p>IT students</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Je frequente 02 universites en meme temps, une a Dla et une autre a Yde, Finexx voyage 
+                  me satisfait car je voyage la nuit et pendant ce voyage je retrouve du confort et je me sens en securite
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client.jpg" alt="client" />
+                <h4>Allane Evaris</h4>
+                <p>Etudiant en Mathematiques</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                    Pour mes voyages je priviligie Finexx voyage, car ils sont tres professionnels et
+                    etant donne le confort je m'exerce souvent en Mathematiques en plein voyage ou je regarde des animes
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client.jpg" alt="client" />
+                <h4>Xavier Frosty</h4>
+                <p>Super Hero</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  chaque nuit je voyage pour venir au secours des citoyens en danger et finexx voyage me permet
+                  d'arriver a temps pour sauver des innocents,rapidement et en toute securite mais je donne 3 etoiles
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client.jpg" alt="client" />
+                <h4>Marled</h4>
+                <p>Eleve ingenieur </p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                  Je suis cliente fidele de Finexx car ils ont un tres bon service de Livraison inter-ville 
+                  j'ai une creperie et je livre des clients a yde, Kribi grace a Finexx voyage , sans que les 
+                  crepes ne se refroidissent
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client.jpg" alt="client" />
+                <h4>Henry</h4>
+                <p>Business-man</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Je suis un business man, je voyage beaucoup , DLA-YDE, Kribi, je travaille avec plusieurs 
+                  gerants de magasins, et finexx voyage prestige est mon prefere, tres professionnel 
+                  je recommande
+                  Finexx
+
+                </p>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="client__card">
+                <img src="assets/client.jpg" alt="client" />
+                <h4>Ariane</h4>
+                <p>Ingenieur Genie Civil</p>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Je suis recommande un peu de partout au Cameroun pour des projets de construction,du coup je me deplace
+                  beaucoup et je reserve mes voyages a l'avance Finexx et c'est vraiment tres fluide
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo">
+            <a href="#"><img src="assets/logof.png" alt="logo" /></a>
+          </div>
+          <p>
+            Deplacez vous partout au Cameroun en toute securite, assurance et dans le confort
+            absolu
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">Acceuil</a>
+            </li>
+            <li>
+              <a href="#">Destinations</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Apropos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nous Contacter</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +237 697 92 60 26
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> finexx@finexxvoyage.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Douala Deido, Cameroun
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>S'inscrie</h4>
+          <form action="/">
+            <input type="text" placeholder="Entrer votre email" />
+            <button class="btn">S'inscrire</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Galand Noah...
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
